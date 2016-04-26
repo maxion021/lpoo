@@ -17,6 +17,8 @@ public class TestaJogo {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+          Dado jogada1 = new Dado();
+          System.out.println(jogada1.gerar());
     }
     
 }
