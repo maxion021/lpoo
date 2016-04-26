@@ -12,4 +12,12 @@ package jogodedados;
  */
 public class Jogo {
 
+    Dado dado1 = new Dado();
+    Dado dado2 = new Dado();
+    
+    void jogada(){
+        System.out.println(dado1.gerar());
+        System.out.println(dado2.gerar());
+    }
+
 }
