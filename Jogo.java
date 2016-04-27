@@ -16,8 +16,15 @@ public class Jogo {
     Dado dado2 = new Dado();
     
     void jogada(){
-        System.out.println(dado1.gerar());
-        System.out.println(dado2.gerar());
+       // System.out.println(dado1.gerar());
+        //System.out.println(dado2.gerar());
+        int d1,d2;
+        d1 = dado1.gerar();
+        d2 = dado2.gerar();
+        System.out.println(d1+d2);//c
+        System.out.println(dado1.valor_dado+dado2.valor_dado);//d
     }
+    
+    
 
 }
