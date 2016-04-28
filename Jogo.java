@@ -16,13 +16,9 @@ public class Jogo {
     Dado dado2 = new Dado();
     
      void jogada(){
-        dado1.gerar();
-        dado2.gerar();
-        System.out.println("Dados: "+dado1.valor_dado+" + "+dado2.valor_dado+" = " + (dado1.valor_dado+dado2.valor_dado));
-        if(endgame() == true){
-            System.out.println("Vitoria");
-        }else{
-        System.out.println("Derrota");
+        primeiraJogada();
+        if(soma == 4 || soma == 5 || soma == 6 || soma == 8 || soma == 9 || soma == 10){
+            endGame();
         }
     }
         
