@@ -11,18 +11,19 @@ package jogodedados;
  * @author Douglas Carlos da  Silva Oliveira
  */
 public class Jogo {
-
     Dado dado1 = new Dado();
     Dado dado2 = new Dado();
     
-     void jogada(){
+    int soma = 0, soma2 = 0;
+    
+    void jogada(){
         primeiraJogada();
         if(soma == 4 || soma == 5 || soma == 6 || soma == 8 || soma == 9 || soma == 10){
             endGame();
         }
     }
         
-    boolean endGame(){
+    void endGame(){
         while(soma2 != soma){
         dado1.gerar();
         dado2.gerar();
@@ -55,5 +56,4 @@ public class Jogo {
             System.out.println("Pontuação: " + soma);
         }
     }
-
 }
