@@ -34,6 +34,7 @@ public class Jogo {
             break;
         }
         }
+        if(soma2 != 7)
         System.out.println("Vitória");
     }
     
