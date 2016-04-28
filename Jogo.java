@@ -22,12 +22,18 @@ public class Jogo {
         }
     }
         
-    boolean endgame(){
-        if((dado1.valor_dado+dado2.valor_dado) == 7 || (dado1.valor_dado+dado2.valor_dado) == 11){
-        return true;
-    }else{
-            return false;
-            }
+    boolean endGame(){
+        while(soma2 != soma){
+        dado1.gerar();
+        dado2.gerar();
+        soma2 = (dado1.valor_dado+dado2.valor_dado);
+        System.out.println("Dados: "+dado1.valor_dado+" + "+dado2.valor_dado+" = " + soma2);
+        if(soma2 == 7){
+            System.out.println("Derrota");
+            break;
+        }
+        }
+        System.out.println("Vitória");
     }
     
     
