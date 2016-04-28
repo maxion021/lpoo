@@ -15,14 +15,23 @@ public class Jogo {
     Dado dado1 = new Dado();
     Dado dado2 = new Dado();
     
-    void jogada(){
-       // System.out.println(dado1.gerar());
-        //System.out.println(dado2.gerar());
-        int d1,d2;
-        d1 = dado1.gerar();
-        d2 = dado2.gerar();
-        System.out.println(d1+d2);//c
-        System.out.println(dado1.valor_dado+dado2.valor_dado);//d
+     void jogada(){
+        dado1.gerar();
+        dado2.gerar();
+        System.out.println("Dados: "+dado1.valor_dado+" + "+dado2.valor_dado+" = " + (dado1.valor_dado+dado2.valor_dado));
+        if(endgame() == true){
+            System.out.println("Vitoria");
+        }else{
+        System.out.println("Derrota");
+        }
+    }
+        
+    boolean endgame(){
+        if((dado1.valor_dado+dado2.valor_dado) == 7 || (dado1.valor_dado+dado2.valor_dado) == 11){
+        return true;
+    }else{
+            return false;
+            }
     }
     
     
