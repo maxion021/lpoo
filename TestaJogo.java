@@ -17,8 +17,8 @@ public class TestaJogo {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-          Jogo jogada1 = new Jogo();
-          jogada1.jogada();
+         Jogo partida = new Jogo();
+        partida.jogada();
     }
     
 }
