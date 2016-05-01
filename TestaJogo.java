@@ -19,8 +19,10 @@ public class TestaJogo {
     public static void main(String[] args) {
         // TODO code application logic here
         int[] a = new int[2];
-         Jogo partida = new Jogo();
-         a = partida.jogada();
+        Jogo partida = new Jogo();
+        a = partida.jogada();
+        //TestaJogo100 jogos = new TestaJogo100();
+        //jogos.variosJogos();
         System.out.println(Arrays.toString(a));
     }
     

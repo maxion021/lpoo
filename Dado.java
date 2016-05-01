@@ -8,13 +8,14 @@ package jogodedados;
 
 /**
  *
- * @author Douglas Carlos da  Silva Oliveira
+ * @author 
  */
+
 public class Dado {
     int valor_dado = 0;
     
     int gerar(){
-    valor_dado = (int)(Math.random()*5+1);
-    return valor_dado;
-}
+        valor_dado = (int)(Math.random()*5+1);
+        return valor_dado;
+    }
 }

@@ -16,7 +16,7 @@ public class Jogo {
     
     int soma = 0, soma2 = 0;
     int resultado[] = new int[2];
-    
+
     int[] jogada(){
         int[] retorno = new int[2];
         retorno = primeiraJogada();
