@@ -5,6 +5,7 @@
  */
 
 package jogodedados;
+import java.util.Arrays;
 
 /**
  *
@@ -17,8 +18,10 @@ public class TestaJogo {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        int[] a = new int[2];
          Jogo partida = new Jogo();
-        partida.jogada();
+         a = partida.jogada();
+        System.out.println(Arrays.toString(a));
     }
     
 }
