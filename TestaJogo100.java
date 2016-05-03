@@ -43,22 +43,24 @@ public class TestaJogo100 {
                 }
             }
         }
-        /*        for(int cont = 0 ; cont < 100 ; cont++){
-            if(c[0][cont] == 1 && c[1][cont] == 1){
-                v[0]++;
-            }
-        }
-        for(int cont = 0 ; cont < 100 ; cont++){
-            if(c[0][cont] == 2 && c[1][cont] == 1){
-                v[1]++;
-            }
-        } */
+
         for(int conta = 0 ; conta < 20; conta++){
-            System.out.println(conta+1 + " :" + v[conta]);
+            System.out.print(conta+1 + ":" + v[conta] + " ");
+        }/*
+        void printArray(int[] anArray) {
+           for (int i = 0; i < anArray.length; i++) {
+              if (i > 0) {
+                 System.out.println(", ");
+              }
+              System.out.println(anArray[i]);
+           }
         }
-        //System.out.println("1: " + v[0]);
-        //System.out.println("2: " + v[1]);
-        System.out.println("C: " + cont2/100);
+        */
+           //int[] testArray = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+           //printArray(v);
+        
+      
+        System.out.println("\nC: " + cont2/100);
         return 0;
     }
 }
