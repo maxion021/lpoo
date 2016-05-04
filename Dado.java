@@ -10,7 +10,6 @@ package jogodedados;
  *
  * @author 
  */
-
 public class Dado {
     int valor_dado = 0;
     

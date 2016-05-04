@@ -21,9 +21,9 @@ public class TestaJogo {
         int[] a = new int[2];
         Jogo partida = new Jogo();
         a = partida.jogada();
-        //TestaJogo100 jogos = new TestaJogo100();
-        //jogos.variosJogos();
-        System.out.println(Arrays.toString(a));
+        TestaJogo100 jogos = new TestaJogo100();
+        jogos.variosJogos();
+        //System.out.println(Arrays.toString(a));
     }
     
 }
